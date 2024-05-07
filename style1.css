@@ -1,0 +1,21 @@
+#external{
+    color: violet;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.boxmodel1{
+    width: 400px;
+    height: 50px;
+    border: 1px solid red;
+    color: skyblue;
+
+}
+
+.parent1{
+    width: 400px;
+    height: 200px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
