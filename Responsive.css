@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainparent{
+    width: 100vw;
+    height: 100vh;
+    background-color: limegreen;
+}
+
+.childheader{
+    width: 100%;
+    height: 100px;
+    background-color: lightyellow;
+}
+
+.childmain{
+    width: 100%;
+    height: calc(100% - 200px);
+    background-color:lightpink;
+    display: flex;
+    position: relative;
+}
+
+.childmainleft{
+    height: 100%;
+    width: 50%;
+    background-color: lightcyan;
+}
+
+.childmainright{
+    height: 100%;
+    width: 50%;
+    background-color: lightgray;
+}
+
+
+.childfooter{
+    width: 100%;
+    height: 100px;
+    background-color: lightsteelblue;
+}
+
+@media(max-width:576px){
+    .mainparent{
+        background-color: whitesmoke;
+    }
+    .childheader{
+        background-color: whitesmoke;
+    }
+    /* .mainparent{
+        background-color: whitesmoke;
+    } */
+    .childfooter{
+        background-color: whitesmoke;
+    }
+}
+
+
+.prect12{
+    color: violet;
+}
+
+.parent{
+    width: 100vw;
+    height: 400px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* border-radius: 50%; */
+    
+    
+}
+
+#child{
+    color: chartreuse;
+    width: 50%;
+    height: 50%;
+    border-radius: 20rem;
+    /* background-color: lightcoral; */
+    text-align: center;
+    
+}
+
+.child1{
+    background-color: orange;
+}
+.child2{
+    background-color: yellow;
+}
+.child3{
+    background-color: green;
+}
+.child4{
+    background-color: blue;
+}
+
+@media (max-width:576px){
+    /* less then means xs  */
+    .parent{
+        background-color: lime;
+    }
+}
+
+@media (min-width: 576px){
+        /* less then means sm  */
+    .parent{
+        background-color: lightseagreen;
+    }
+}
+
+@media (min-width: 776px){
+        /* less then means m  */
+
+    .parent{
+    background-color: lightyellow;
+}
+}
+
+@media (min-width: 992px){
+            /* less then means l  */
+.parent{
+    background-color: lightcoral;
+}
+}
+
+
+@media(min-width: 1200px){
+                /* less then means xl  */
+                .parent{
+                    background-color:lightskyblue ;
+                }
+}
+
+
+@media(min-width:1400px){
+                    /* less then means xxl  */
+                    .parent{
+                        background-color: lightgray;
+                    }
+}
