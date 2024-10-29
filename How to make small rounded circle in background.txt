@@ -1,0 +1,29 @@
+
+How to make small rounded circle in background and using material mui and react-icon;
+=> As we know just to install material mui and use react icon.
+=> Just to import any button from material mui "contained"
+=>then just take className as rounded-circle with min-width,width,height 40px not to ferget to mention !important so then it automatically it becomes circle.
+=>Then we have to give background-color as we lernt from photopea.com and image screen shot
+ 
+
+import { MdMenu } from "react-icons/md";
+import { MdOutlineMenuOpen } from "react-icons/md";
+
+    <Button className='rounded-circle svg' ><MdMenu/></Button>    
+
+<style>
+.rounded-circle{
+    min-width: 40px !important; 
+    width: 40px !important;
+    height: 40px !important;
+    background-color: #f0f5ff !important;
+    color: #292929;
+
+.svg{
+    color: #292929;
+    
+}
+    
+}
+
+</style>
