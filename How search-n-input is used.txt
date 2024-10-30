@@ -1,0 +1,58 @@
+How search-n-input is used
+
+How search-n-input is used removed border of input n made it transparant, increased font size and used position-relative so it is working inside of its parent.
+
+I have used material mui and react0icon
+
+import { MdOutlineMenuOpen } from "react-icons/md";
+
+
+<script>
+        <div className='col-sm-3 mypract part-2 pl-4'>
+          <Button className='rounded-circle mr-3' ><MdOutlineMenuOpen /></Button>
+          <SearchBox />
+
+below this is searchBox
+    <div className='SearchBox mypract'>
+      <IoIosSearch className='' />
+      <input type='text' placeholder='Search here...' className='inputwork' />
+
+    </div>
+</script>
+
+<style>
+.SearchBox{
+    width: 400px;
+    height: 30px;
+    background-color: #f0f5ff;
+    position: relative;
+    border-radius: 6px;
+    padding: 3px 15px;
+
+
+}
+
+.mypract{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.inputwork{
+    background: transparent;
+    border: 0px;
+    outline: none;
+    padding-left: 0px;
+    font-size: 14px;
+    color: #292929;
+
+}
+
+.inputwork::-webkit-input-placeholder{color: rgba(0,0,0,0.6)}
+
+.SearchBox svg{
+    font-size: 18px;
+    color: #292929;
+}
+
+</style>
